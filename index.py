@@ -65,8 +65,6 @@ def condensateur():
             print("TODO MAKE CALCULATOR SYSTEM")
         if esc1 == 2:
             condensateur()
-        else:
-            return;
 
     if condresult == 2:
         Clear()
@@ -79,8 +77,6 @@ def condensateur():
             print("TODO MAKE CALCULATOR SYSTEM")
         if esc2 == 2:
             condensateur()
-        else:
-            return;
 
     if condresult == 3:
         Clear()
@@ -93,14 +89,12 @@ def condensateur():
             print("TODO MAKE CALCULATOR SYSTEM")
         if esc3 == 2:
             condensateur()
-        else:
-            return;
 
     if condresult == 4:
         Clear()
 
         print("4 - Association Parallèle")
-        print("\nFormule : \nLorem ipsum dolor inpum lorem plor.\n\n")
+        print("\nFormule : Ceq = C1+C2+C3+C4...\nLorem ipsum dolor inpum lorem plor.\n\n")
         esc4 = float(input("1 - Calculer, 2 - Retourner à l'Accueil."))
 
         if esc4 == 1:
@@ -111,18 +105,16 @@ def condensateur():
             C3 = float(input("C3 = "))
             C4 = float(input("C4 = "))
 
-            Ceq = C1 + C2 + C3 + C4
+            Ceq = C1+C2+C3+C4
             print("Résultat : ", Ceq)
         if esc4 == 2:
             condensateur()
-        else:
-            return;
 
     if condresult == 5:
         Clear()
 
         print("5 - Association Série")
-        print("\nFormule : \nLorem ipsum dolor inpum lorem plor.\n\n")
+        print("\nFormule : 1/Ceq=1/C1+1/C2+1/C3+1/C4\nLorem ipsum dolor inpum lorem plor.\n\n")
         esc5 = float(input("1 - Calculer, 2 - Retourner à l'Accueil."))
 
         if esc5 == 1:
@@ -133,12 +125,15 @@ def condensateur():
             C3 = float(input("C3 = "))
             C4 = float(input("C4 = "))
 
-            cceq = 1 / C1 + 1 / C2 + 1 / C3 + 1 / C4
-            print("Résultat : ", cceq)
+            cceq = 1/C1+1/C2+1/C3+1/C4
+            print("Résultat : ", cceq, "\n")
+            escape = input("Y - pour retourner à l'accueil...")
+
+            if escape == "Y" or "y":
+                print("test")
+
         if esc5 == 2:
             condensateur()
-        else:
-            return;
 
     if condresult == 6:
         Clear()
@@ -151,8 +146,6 @@ def condensateur():
             print("TODO MAKE CALCULATOR SYSTEM")
         if esc6 == 2:
             condensateur()
-        else:
-            return;
 
     if condresult == 7:
         Clear()
@@ -165,11 +158,6 @@ def condensateur():
             print("TODO MAKE CALCULATOR SYSTEM")
         if esc7 == 2:
             condensateur()
-        else:
-            return;
-
-    else:
-        return;
 
 
 if result == 1:
